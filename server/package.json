@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-	"start": "npm-run-all --parallel mongostart nodestart ",
+    "start": "npm-run-all --parallel mongostart nodestart ",
     "nodestart": "node index.js",
     "mongostart": "mongod",
     "nodemonstart": "nodemon index.js",
