@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+	"start": "npm-run-all --parallel mongostart nodestart ",
+    "nodestart": "node index.js",
+    "mongostart": "mongod",
+    "nodemonstart": "nodemon index.js",
+    "dev": "npm-run-all --parallel mongostart nodemonstart",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aditya Desai",
